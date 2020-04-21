@@ -1,0 +1,77 @@
+-------------------------------------------------------------------------------------------------------
+Brainstorming sur les différents modules du vaisseau
+-------------------------------------------------------------------------------------------------------
+
+CORE
+energyProduction (opposee à energyConsumption de tous les autres modules)
+si l'on veut plusieurs CORE, ils doivent etre accolés le suns aux autres (en ligne / en rectangle / en ovale)
+mettre plusieurs CORE donne un bonus de production à chaque nouveau CORE ajouté
+ne doit pas etre en contact avec l'exterieur du vaisseau
+doit etre separé par 1 STRUCTURE au moins, des modules PILOT ou CARGO
+si il n'y a pas de structure entre CORE et PILOT, l'equipage est irradié, meurt, le vaisseau dérive ...
+
+PILOT
+cabine de pilotage du vaisseau
+doit être unique
+ne doit pas etre en contact avec l'exterieur du vaisseau
+permet de piloter le vaisseau (1 joueur)
+
+STRUCTURE
+permet de donner la forme du vaisseau
+la forme globale peut etre Rectangle, Delta, Ovale, autres ?
+chaque brique de structure a de la vie
+si une structure est détruite, on regarde si il y a depressurisation du vaisseau (vis à vis du PILOT). si c'est le cas, l'equipage est mort, le vaisseau dérive ...
+
+TURRET
+peut etre cumulée avec d'autres TURRETs pour augmenter l'efficacité
+consomme de l'energie
+si plusieurs TURRETS sont placées cote à coté, on remplace par une tourelle plus efficace
+on peut mettre les TURRETS en ligne par 2 ou bien en Rectangle (2x2=4) ou 2x3, etc...
+On peut mettre les tourelles en "playable" et les faire pivoter et tirer par le joueur (un autre joueur ? multi coop local pilotage du vaisseau) 
+On part du principe que les tourelles tirent à 360° ?
+Pas d'emplacement obligatoire pour les tourelles ? (bords du vaisseau ? si oui on peut limiter la rotation des tourelles peut etre ?)
+
+SHIELD
+générateur de bouclier
+consomme de l'energie
+generateur directionnel ? angle avant ou arriere + angle de protection ?
+si on fait un générateur directionnel, cela necessite d'en mettre plusieurs pour bien protéger le vaisseau
+si on met le bouclier en "playable", on peut le faire pivoter par le joueur (un autre joueur ? multi coop local pilotage du vaisseau)
+pas de position obligatoire pour les tourelles ? (bords du vaisseau ? milieu du vaisseau ?)
+
+BOOSTER
+on les mets forcément en arriere du vaisseau càd qu'il n'y a pas d'autre briques derriere lui (mais sur les cotés c'est toujours possible)
+Consomme de l'energie lui aussi
+en fonction du "poids" de chaque brique du vaisseau, le booster a une puissance de poussée (pas forcément corrélée avec sa conso d'energie, on peut penser plusieurs moteurs 
+avec différents rendements) et cela permet de calculer ses accélérations, peut etre aussi la vitesse de rotation.
+on peut cumuler d'autres booster derriere un booster.
+Si on met plusieurs sources de booster, il faut les mettre de manière symétrique (cela rejoint le coté rotation du vaisseau)
+Si un booster se fait tirer dessus, cela jouera donc à la fois sur la poussée ainsi que sur la manoeuvrabilité du vaisseau)
+Partons du principe que les boosters gèrent le freinage ^^
+Si le vaisseau n'a plus de booster, le vaisseau part à la dérive mais est toujours fonctionnel pour le reste
+Doit etre mis à coté d'un THRUSTER pour assurer plus de poussée
+
+THRUSTER
+petit propulseur pour assurer des rotations ou des freinages du vaisseau
+doit etre mis en périphérie du vaisseau et est intégré à la structure (ou entouré de structures disons)
+
+CARGO
+juste pour remplir le vaisseau avec des cargaisons.
+Rajoute du volume et du poids au vaisseau.
+
+-------------------------------------------------------------------------------------------------------
+Formes du vaisseau
+-------------------------------------------------------------------------------------------------------
+
+2 formes de modules 
+carré et triangle (demi-carré par la diagonale)
+
+On part du principe que notre modèle est purement carré (1 carré par module du vaisseau)
+et pour des raisons d'estéthique, les carrés de structures, suivant les structures alentours, pourront etre transformés en triangles juste pour l'affichage
+
+
+
+
+
+
+
